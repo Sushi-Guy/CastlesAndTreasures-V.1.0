@@ -6,8 +6,8 @@
 
 // Variables & constants avalible to all of main.cpp
 std::string noStop;
-std::ifstream loadWorld;
-std::ofstream makeWorld;
+std::ifstream loadWorldOne;
+std::ofstream makeWorldOne;
 
 // Functions
 void clearNR() {
@@ -17,12 +17,26 @@ void clearNR() {
 }
 
 int main() {
+    // Load
     std::cout << "Loading...\n";
-    
+    loadWorldOne.open("worlds/worldOne/pwfo.txt");
+    if(!loadWorldOne.is_open()) {
+        std::cout << "Error opening pfwo.txt (Load)\n";
+        return 1;
+    }
+    makeWorldOne.open("pfwo.txt");
+    if(!makeWorldOne.is_open()) {
+        std::cout << "Error opening pwfo.txt (Make)\n";
+        return 1;
+    }
+
 
     std::cout << "### ### ### ### #   ### ###        \n#   # # #    #  #   #   #          \n#   ### ###  #  #   ##  ###        \n#   # #   #  #  #   #     #        \n### # # ###  #  ### ### ###        \n\n                                 #### #  # ###                      \n#### ## # #  #                     \n#  # # ## ###                      \n\n### ### ### ### ### # # ### ### ###\n #  # # #   # # #   # # # # #   #  \n #  ### ##  ### ### # # ### ##  ###\n #  ##  #   # #   # # # ##  #     #\n #  # # ### # # ### ### # # ### ###\n\n # #  #    ####                    \n # # ##    ## #                    \n # #  #    ## #                    \n # #  #    # ##                    \n  #  ### # ####                    \n";
     
+
+    // Exit
     std::cout << "Enter any key(s) to exit...";
     std::cin >> noStop;
+    
     return 0;
 }
