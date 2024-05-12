@@ -6,7 +6,7 @@
 
 // Variables & constants avalible to all of main.cpp
 std::string noStop;
-std::ifstream worldOneOut;
+std::ofstream worldOneOut;
 
 // Functions
 void clearNR() {
@@ -29,8 +29,9 @@ int main() {
     
 
     // Exit
-    std::cout << "Enter any key(s) to exit...";
+    std::cout << "Enter any key(s) to exit...\n";
     std::cin >> noStop;
-    
+    std::cout << "Exiting...\n";
+    worldOneOut.close();
     return 0;
 }
