@@ -6,8 +6,7 @@
 
 // Variables & constants avalible to all of main.cpp
 std::string noStop;
-std::ifstream loadWorldOne;
-std::ofstream makeWorldOne;
+std::ifstream worldOneOut;
 
 // Functions
 void clearNR() {
@@ -19,14 +18,9 @@ void clearNR() {
 int main() {
     // Load
     std::cout << "Loading...\n";
-    loadWorldOne.open("worlds/worldOne/pfwoLD.txt");
-    if(!loadWorldOne.is_open()) {
-        std::cout << "Error opening pfwo.txt (Load)\n";
-        return 1;
-    }
-    makeWorldOne.open("pfwo.txt");
-    if(!makeWorldOne.is_open()) {
-        std::cout << "Error opening pwfo.txt (Make)\n";
+    worldOneOut.open("worlds/worldOne/propertiesForWorldOne.txt");
+    if(!worldOneOut.is_open()) {
+        std::cout << "Error opening propertiesForWorldOne.txt";
         return 1;
     }
 
