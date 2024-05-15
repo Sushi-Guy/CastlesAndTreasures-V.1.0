@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Webs/CastlesAndTreasures-V.1.0",
-      "program": "c:/Webs/CastlesAndTreasures-V.1.0/build/Debug/outDebug",
+      "cwd": "c:/Games/CastlesAndTreasures-V.1.0",
+      "program": "c:/Games/CastlesAndTreasures-V.1.0/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
