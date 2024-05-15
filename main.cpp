@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 
-#include "headers/load.h"
+
 
 // Variables & constants avalible to all of main.cpp
 std::string noStop;
@@ -23,7 +23,8 @@ int main() {
         std::cout << "Error opening propertiesForWorldOne.txt";
         return 1;
     }
-
+    
+    clearNR();
 
     std::cout << "### ### ### ### #   ### ###        \n#   # # #    #  #   #   #          \n#   ### ###  #  #   ##  ###        \n#   # #   #  #  #   #     #        \n### # # ###  #  ### ### ###        \n\n#### #  # ###                      \n#### ## # #  #                     \n#  # # ## ###                      \n\n### ### ### ### ### # # ### ### ###\n #  # # #   # # #   # # # # #   #  \n #  ### ##  ### ### # # ### ##  ###\n #  ##  #   # #   # # # ##  #     #\n #  # # ### # # ### ### # # ### ###\n\n # #  #    ####                    \n # # ##    ## #                    \n # #  #    ## #                    \n # #  #    # ##                    \n  #  ### # ####                    \n";
     
