@@ -24,6 +24,16 @@ void clearNR() {
     }
 }
 
+int save(int worldNum, bool all) {
+    if(worldNum >= 0 && all == true) {
+        std::cout << "Error saving: can't save all worlds and have a world number.";
+        return 1;
+    }
+    if(worldNum == 1) {
+        worldOnePropertiesO << std::ifstream worldOnePropertiesI;
+    }
+}
+
 int main() {
     // Load
     std::cout << "Loading...\n";
@@ -77,10 +87,18 @@ int main() {
         std::cout << "Error opening propertiesForWorldFive.txt (O)";
         return 1;
     }
+    // Testing all
+    save();
+
     clearNR();
 
+    // 
     std::cout << "### ### ### ### #   ### ###        \n#   # # #    #  #   #   #          \n#   ### ###  #  #   ##  ###        \n#   # #   #  #  #   #     #        \n### # # ###  #  ### ### ###        \n\n#### #  # ###                      \n#### ## # #  #                     \n#  # # ## ###                      \n\n### ### ### ### ### # # ### ### ###\n #  # # #   # # #   # # # # #   #  \n #  ### ##  ### ### # # ### ##  ###\n #  ##  #   # #   # # # ##  #     #\n #  # # ### # # ### ### # # ### ###\n\n # #  #    ####                    \n # # ##    ## #                    \n # #  #    ## #                    \n # #  #    # ##                    \n  #  ### # ####                    \n";
     
+    // Main game loop
+    while(true) {
+
+    }
 
     // Exit
     std::cout << "Enter any key(s) to exit...\n";
