@@ -30,7 +30,7 @@ int save(int worldNum, bool all) {
         return 1;
     }
     if(worldNum == 1) {
-        worldOnePropertiesO << std::ifstream worldOnePropertiesI;
+        
     }
 }
 
@@ -88,7 +88,7 @@ int main() {
         return 1;
     }
     // Testing all
-    save();
+    
 
     clearNR();
 
